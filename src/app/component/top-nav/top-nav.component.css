@@ -1,0 +1,15 @@
+ul{
+display:flex;
+list-style: none;
+
+}
+ul li{
+    margin-right: 10px;
+}
+
+.nav{
+    margin-left: 25px;
+    color:white;
+    margin-right: 25px;
+    text-decoration: none;
+}

@@ -1,0 +1,6 @@
+<div [ngClass]="{'row': isRow}">
+  <app-image-card (eventOutput)="getOutput($event)"
+    [imageCard]="item"
+    *ngFor="let item of myservice.list"
+  ></app-image-card>
+</div>

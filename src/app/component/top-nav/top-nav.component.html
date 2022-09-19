@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+      
+    <a [ngClass]="'nav'" routerLink="/login" *ngIf="!service.isLoggedIn"> Login</a>
+<a [ngClass]="'nav'" routerLink="/home/Koshlendra" *ngIf="service.isLoggedIn"> Home</a>
+<a [ngClass]="'nav'" routerLink="/gallery" [queryParams]="{country: 'India'}"> Gallery</a>
+<a [ngClass]="'nav'" routerLink="/contactus"> Contact Us</a>
+<a [ngClass]="'nav'" routerLink="/login" *ngIf="service.isLoggedIn"> Logout</a>
+</mat-toolbar>
